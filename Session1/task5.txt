@@ -1,0 +1,71 @@
+Difference Between a Table, Row, and Column in SQL
+
+Think of a food delivery app like Zomato. The information about restaurants, customers, and orders can be stored in SQL tables.
+
+
+
+1. Table
+
+A table is a collection of related data organized into rows and columns.
+
+For example, a Zomato app could have a table called orders:
+
+| order_id | customer_name | restaurant | amount |
+| -------: | ------------- | ---------- | -----: |
+|      101 | Amit          | Pizza Hut  |   ₹450 |
+|      102 | Rahul         | Domino's   |   ₹600 |
+|      103 | Priya         | Subway     |   ₹350 |
+
+
+Here, the entire orders structure is called a table.
+
+
+
+2. Row
+
+A row represents one complete record in a table.
+
+For example:
+
+| order_id | customer_name | restaurant    |   amount |
+| -------: | ------------- | ------------- | -------: |
+|  **101** | **Amit**      | **Pizza Hut** | **₹450** |
+
+
+This entire record is one row, representing Amit's order from Pizza Hut.
+
+
+
+3. Column
+
+A column represents one specific type of information stored for every record.
+
+For example:
+
+order_id
+customer_name
+restaurant
+amount
+
+These are all columns of the orders table.
+
+order_id → stores the order ID
+customer_name → stores the customer's name
+restaurant → stores the restaurant name
+amount → stores the order amount
+
+
+
+In simple terms : 
+
+TABLE  → Complete collection of data
+ROW    → One complete record
+COLUMN → One type/category of information
+
+
+
+So, in a Zomato-style food delivery system:
+
+Table = Orders data
+Row = One customer's order
+Column = One property of that order (such as customer name, restaurant, or amount)
